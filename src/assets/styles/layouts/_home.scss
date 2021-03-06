@@ -1,12 +1,177 @@
 body {
     margin: 0;
-    padding: 30px;
     font-family: $font-family-lato;
     background-color: #fff;
-    color: #000000;
+    color: #000;
 }
 
 h1 {
-    font-family: $font-family-lilita;
+    font: 40px $font-amatic;
     text-transform: uppercase;
+    border-bottom: double;
+}
+
+h2 {
+    font: 30px $font-amatic;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font: 30px $font-amatic;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#header {
+    background-color: $primary-color;
+    input+label {
+        position: fixed;
+        top: 25px;
+        right: 40px;
+        height: 20px;
+        width: 15px;
+        z-index: 5;
+        span {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            top: 50%;
+            margin-top: -1px;
+            left: 0;
+            display: block;
+            background: $dark-color;
+            transition: .5s;
+        }
+        span:first-child {
+            top: 3px;
+        }
+        span:last-child {
+            top: 16px;
+        }
+    }
+    label:hover {
+        cursor: pointer;
+    }
+    input:checked+label {
+        span {
+            opacity: 0;
+            top: 50%;
+        }
+        span:first-child {
+            opacity: 1;
+            transform: rotate(405deg);
+        }
+        span:last-child {
+            opacity: 1;
+            transform: rotate(-405deg);
+        }
+    }
+    input~nav {
+        background-color: $primary-color; //Color barra navegación
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px; //Para cambiar el ancho de la barra de navegación
+        z-index: 3;
+        transition: .5s;
+        transition-delay: .5s;
+        overflow: hidden;
+        >ul {
+            text-align: center;
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            right: 20%;
+            list-style: none;
+            >li {
+                opacity: 0;
+                transition: .5s;
+                transition-delay: 0s;
+                >a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-family: $font-amatic;
+                    font-size: 20px;
+                    display: block;
+                    padding: 30px 10px;
+                }
+            }
+        }
+    }
+    input:checked~nav {
+        height: 100%;
+        transition-delay: 0s;
+        >ul {
+            >li {
+                opacity: 1;
+                transition-delay: .5s;
+            }
+        }
+    }
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    border-bottom: 5px solid $dark-color;
+    color: #fff;
+    background-image: url(/src/assets/images/fondo-mar-opacity.JPG);
+    background-color: $light-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    img {
+        position: relative;
+        top: 130px; //Corregir para ajustar que siempre quede en medio la linea
+        height: 200px;
+        border: 5px solid $dark-color;
+        border-radius: 50%;
+    }
+    h1 {
+        margin-top: 80px;
+    }
+    p {
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.container {
+    width: 80%;
+    padding: 20px 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre-mi {
+    padding-top: 150px;
+}
+
+#sobre-mi,
+#skills {
+    background-color: $light-color;
+}
+
+.parallax-cita {
+    background-image: url(/src/assets/images/fondo-mar-opacity.JPG);
+    background-color: $light-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+}
+
+blockquote {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

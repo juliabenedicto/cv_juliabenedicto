@@ -9,23 +9,33 @@
     <link rel="stylesheet" href="./assets/styles/main.scss">
     <!-- do not remove this line! -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Lilita+One&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <title>Júlia Benedicto</title>
 </head>
 
 <body>
-    <div class="inicio" id="inicio">
-        <nav id="menu-nav">
-            <a href="#inicio">Inicio</a>
-            <a href="#educacion">Eucación</a>
-            <a href="#experiencia-profesional">Experiencia Profesional</a>
-            <a href="#skills">Skills</a>
-            <a href="#contacto">Contacto</a>
+    <header id="header">
+        <input id="burger" type="checkbox">
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#experiencia-profesional">Experiencia Profesional</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
         </nav>
         <!--Fin #menu-nav-->
+    </header>
+    <div id="hero">
         <h1>Júlia Benedicto</h1>
         <p>Maestra, Abogada y estudiante de Programación Web</p>
-
         <img src="/src/assets/images/juliabenedicto.jpg" alt="julia-benedicto">
     </div>
     <!--Fin #inicio (CAMBIAR NOMBRE)-->
@@ -36,17 +46,6 @@
         <p>Siempre he confiado en que renovarme constantemente y no dejar de aprender cosas nuevas me abriría muchas puertas, y así está siendo.</p>
     </div>
     <!--Fin #sobre-mi-->
-
-    <div class="imagen">
-        <!--AÑADIR IMAGEN CON CITA-->
-        <div class="container">
-            <blockquote>
-                <p>Yo sé que el miedo es un obstáculo para muchas personas, para mí es una ilusión.
-                </p>
-                <footer>Michael Jordan</footer>
-            </blockquote>
-        </div>
-    </div>
 
     <div class="container" id="educacion">
         <h3>Educación</h3>
@@ -79,6 +78,16 @@
         </div>
     </div>
     <!--Fin #educacion-->
+
+    <div class="parallax-cita">
+        <!--AÑADIR IMAGEN CON CITA-->
+        <blockquote>
+            <p>Yo sé que el miedo es un obstáculo para muchas personas, para mí es una ilusión.
+            </p>
+            <footer>Michael Jordan</footer>
+        </blockquote>
+    </div>
+
 
     <div class="container" id="experiencia-profesional">
         <h3>Experiencia profesional</h3>
