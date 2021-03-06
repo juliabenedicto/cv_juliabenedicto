@@ -1,24 +1,25 @@
 body {
     margin: 0;
     font-family: $font-family-lato;
-    background-color: #fff;
+    font-size: 1.2rem;
+    background-color: $body-bg;
     color: #000;
 }
 
 h1 {
-    font: 40px $font-amatic;
+    font: 3rem $font-amatic;
     text-transform: uppercase;
     border-bottom: double;
 }
 
 h2 {
-    font: 30px $font-amatic;
+    font: 2.5rem $font-amatic;
     text-transform: uppercase;
     text-align: center;
 }
 
 h3 {
-    font: 30px $font-amatic;
+    font: 2.5rem $font-amatic;
     text-transform: uppercase;
     text-align: center;
 }
@@ -174,4 +175,109 @@ blockquote {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+//TIMELINE
+.timeline {
+    position: relative;
+    padding-left: 4rem;
+    margin: 0 0 0 15px;
+    color: #fff;
+    font-size: 01rem;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background-color: $primary-color;
+    }
+}
+
+.timeline-container {
+    position: relative;
+    margin-bottom: 2.5rem;
+    .timeline-icon {
+        position: absolute;
+        left: -88px;
+        top: 4px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 1.6rem;
+        background: $light-color;
+        i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .timeline-body {
+        background: $light-color;
+        border-radius: 1px 3px 9px rgba(0, 0, 0, .1);
+        &:before {
+            content: '';
+            background: inherit;
+            width: 20px;
+            height: 20px;
+            display: block;
+            position: absolute;
+            top: 15px;
+            left: -10px;
+            transform: rotate(45deg);
+            border-radius: 0 0 0 2px;
+        }
+        p {
+            padding-left: 15px;
+            margin-bottom: 5px;
+        }
+        .timeline-title {
+            margin-bottom: 1.4rem;
+            .badge {
+                position: relative;
+                top: 10px;
+                background: $body-bg;
+                margin: 20px 0 0 10px;
+                padding: 4px 8px;
+                border-radius: 3px;
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+        .timeline-place {
+            color: $dark-color;
+            margin-top: 0;
+        }
+        .timeline-subtitle {
+            color: #000;
+            font-weight: 300;
+            font-style: italic;
+            opacity: .4;
+            padding: 0 15px 15px 15px;
+        }
+    }
+    //Growth Timeline
+    &.growth {
+        .badge,
+        .timeline-icon {
+            background: $secondary-color !important;
+        }
+    }
+    //Derecho Timeline
+    &.derecho {
+        .badge,
+        .timeline-icon {
+            background: $dark-color !important;
+        }
+    }
+    //Comunidad Timeline
+    &.comunidad {
+        .badge,
+        .timeline-icon {
+            background: #5ba704 !important;
+        }
+    }
 }
