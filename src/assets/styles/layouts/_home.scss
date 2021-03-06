@@ -255,7 +255,7 @@ blockquote {
             color: #000;
             font-weight: 300;
             font-style: italic;
-            opacity: .4;
+            opacity: .6;
             padding: 0 15px 15px 15px;
         }
     }
@@ -263,21 +263,28 @@ blockquote {
     &.growth {
         .badge,
         .timeline-icon {
-            background: $secondary-color !important;
+            background: #00ca6d !important;
         }
     }
     //Derecho Timeline
     &.derecho {
         .badge,
         .timeline-icon {
-            background: $dark-color !important;
+            background: #0079cb !important;
         }
     }
     //Comunidad Timeline
     &.comunidad {
         .badge,
         .timeline-icon {
-            background: #5ba704 !important;
+            background: #7d42cb !important;
+        }
+    }
+    //Deporte Timeline
+    &.deporte {
+        .badge,
+        .timeline-icon {
+            background: #c41800 !important;
         }
     }
 }
