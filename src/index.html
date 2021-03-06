@@ -1,21 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
+<html lang="es">
 
 <head>
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="stylesheet" href="./assets/styles/main.scss">
     <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Lilita+One&display=swap" rel="stylesheet">
+    <title>Júlia Benedicto</title>
 </head>
 
 <body>
-    <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, UOC! <i class="fas fa-university"></i></h1>
-    <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses from the Master's Program in Multimedia Applications and the Master's Program in Web App and Website Development at the Universitat Oberta de Catalunya.
-    </p>
+    <div class="inicio" id="inicio">
+        <nav id="menu-nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#educacion">Eucación</a>
+            <a href="#experiencia-profesional">Experiencia Profesional</a>
+            <a href="#skills">Skills</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <!--Fin #menu-nav-->
+        <h1>Júlia Benedicto</h1>
+        <p>Maestra, Abogada y estudiante de Programación Web</p>
+
+        <img src="/src/assets/images/juliabenedicto.jpg" alt="julia-benedicto">
+    </div>
+    <!--Fin #inicio (CAMBIAR NOMBRE)-->
+
+    <div class="container" id="sobre-mi">
+        <h2>Sobre mi</h2>
+        <p>Me considero una persona tenaz, entusiasta y proactiva, con facilidad para relacionarme con la gente y sacar lo mejor de las personas de mi alrededor.</p>
+        <p>Siempre he confiado en que renovarme constantemente y no dejar de aprender cosas nuevas me abriría muchas puertas, y así está siendo.</p>
+    </div>
+    <!--Fin #sobre-mi-->
+
+    <div class="imagen">
+        <!--AÑADIR IMAGEN CON CITA-->
+        <div class="container">
+            <blockquote>
+                <p>Yo sé que el miedo es un obstáculo para muchas personas, para mí es una ilusión.
+                </p>
+                <footer>Michael Jordan</footer>
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="container" id="educacion">
+        <h3>Educación</h3>
+        <div class="cronologia">
+            <div class="periodo">
+                <p>1992 - 2007</p>
+            </div>
+            <div class="descripcion">
+                <p class="crono-titulo">Lycée Français de Barcelona</p>
+                <p class="crono-detalle">Estudios P3 a Bachillerato. BAC Literario.</p>
+            </div>
+        </div>
+        <div class="cronologia">
+            <div class="periodo">
+                <p>2008-2011</p>
+            </div>
+            <div class="descripcion">
+                <p class="crono-titulo">Universitat de Girona</p>
+                <p class="crono-detalle">Maestra de Educación Primaria, Especialidad Educación Física</p>
+            </div>
+        </div>
+        <div class="cronologia">
+            <div class="periodo">
+                <p>2010-2014</p>
+            </div>
+            <div class="descripcion">
+                <p class="crono-titulo">Universitat Autònoma de Barcelona</p>
+                <p class="crono-detalle">Grado en Derecho</p>
+            </div>
+        </div>
+    </div>
+    <!--Fin #educacion-->
+
+    <div class="container" id="experiencia-profesional">
+        <h3>Experiencia profesional</h3>
+    </div>
+    <!--Fin #experiencia-profesional-->
+
+    <div class="container" id="skills">
+        <h3>Skills</h3>
+        <ul>
+            <li>
+                <p class="skill-titulo">HTML + CSS</p>
+                <p class="skill-detalle">60%</p>
+            </li>
+            <li>
+                <p class="skill-titulo">HTML + CSS</p>
+                <p class="skill-detalle">60%</p>
+            </li>
+            <li>
+                <p class="skill-titulo">HTML + CSS</p>
+                <p class="skill-detalle">60%</p>
+            </li>
+        </ul>
+    </div>
+    <!--Fin #skills-->
+
+    <div class="container" id="contacto">
+        <h3>Contacto</h3>
+
+        <form class="form" id="form">
+            <div class="form-control">
+                <label for="nombre">Nombre + Apellido(s)</label>
+                <input id="nombre" type="text" placeholder="Introduce tu nombre y apellido(s)">
+                <small>Mensaje de error</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input id="nombre" type="text" placeholder="Introduce tu email">
+                <small>Mensaje de error</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input id="nombre" type="text" placeholder="Introduce tu email">
+                <small>Mensaje de error</small>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </div>
+    <!--Fin #contacto-->
+
     <script src="./assets/scripts/main.js"></script>
     <!-- do not remove this line! -->
 </body>
