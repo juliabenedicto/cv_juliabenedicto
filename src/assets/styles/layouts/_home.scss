@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: $font-family-lato;
     font-size: 1.2rem;
+    font-weight: 300;
     background-color: $body-bg;
     color: #000;
 }
@@ -188,7 +189,8 @@ blockquote {
         content: '';
         position: absolute;
         left: 0;
-        top: 0;
+        top: 10px;
+        bottom: -30px;
         width: 4px;
         height: 100%;
         background-color: $primary-color;
@@ -205,6 +207,9 @@ blockquote {
         width: 50px;
         height: 50px;
         border-radius: 50%;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
         text-align: center;
         font-size: 1.6rem;
         background: $light-color;
@@ -217,7 +222,10 @@ blockquote {
     }
     .timeline-body {
         background: $light-color;
-        border-radius: 1px 3px 9px rgba(0, 0, 0, .1);
+        border-radius: 10px;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
         &:before {
             content: '';
             background: inherit;
@@ -231,8 +239,13 @@ blockquote {
             border-radius: 0 0 0 2px;
         }
         p {
+            color: $dark-color;
             padding-left: 15px;
+            padding-right: 2px;
             margin-bottom: 5px;
+            span {
+                font-weight: bold;
+            }
         }
         .timeline-title {
             margin-bottom: 1.4rem;
@@ -248,8 +261,9 @@ blockquote {
             }
         }
         .timeline-place {
-            color: $dark-color;
+            color: #fff;
             margin-top: 0;
+            font-size: 0.8rem;
         }
         .timeline-subtitle {
             color: #000;
@@ -286,5 +300,66 @@ blockquote {
         .timeline-icon {
             background: #c41800 !important;
         }
+    }
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    label {
+        color: #777;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input {
+        font-size: 12px;
+    }
+    p {
+        font-size: 10px;
+    }
+    input:focus {
+        outline: 0;
+        border-color: #777;
+    }
+    .sucess input {
+        border-color: #00ca6d;
+    }
+    .error input {
+        border-color: #c41800;
+    }
+    small {
+        color: #c41800;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+    .error small {
+        visibility: visible;
+    }
+}
+
+.form button {
+    cursor: pointer;
+    background-color: $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+     :hover {
+        background-color: $dark-color;
+        border: 2px solid $dark-color;
     }
 }
