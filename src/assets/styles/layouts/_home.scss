@@ -116,14 +116,15 @@ h3 {
 }
 
 #hero {
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 50vh;
     border-bottom: 5px solid $dark-color;
     color: #fff;
-    background-image: url(/src/assets/images/fondo-mar-opacity.JPG);
+    background-image: url(/src/assets/images/hero-juliabenedicto2.jpg);
     background-color: $light-color;
     background-position: center;
     background-repeat: no-repeat;
@@ -136,11 +137,7 @@ h3 {
         border-radius: 50%;
     }
     h1 {
-        margin-top: 80px;
-    }
-    p {
-        text-transform: uppercase;
-        text-align: center;
+        margin-top: 20vh;
     }
 }
 
@@ -263,7 +260,6 @@ blockquote {
         .timeline-place {
             color: #fff;
             margin-top: 0;
-            font-size: 0.8rem;
         }
         .timeline-subtitle {
             color: #000;
@@ -303,6 +299,75 @@ blockquote {
     }
 }
 
+//SKILLS
+@keyframes load {
+    from {
+        width: 0%;
+    }
+}
+
+@-webkit-keyframes load {
+    from {
+        width: 0%;
+    }
+}
+
+@-moz-keyframes load {
+    from {
+        width: 0%;
+    }
+}
+
+.bar {
+    background-color: #eee;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.bar::before {
+    content: attr(data-skill);
+    background-color: #f3b0ff;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+}
+
+.bar.front::before {
+    background-color: #ffcc33;
+}
+
+.bar.back::before {
+    background-color: #a6cfe3;
+}
+
+.bar.learning::before {
+    width: calc(20% - 10px);
+}
+
+.bar.basic::before {
+    width: calc(40% - 10px);
+}
+
+.bar.intermediate::before {
+    width: calc(60% - 10px);
+}
+
+.bar.advanced::before {
+    width: calc(80% - 10px);
+}
+
+.bar.expert::before {
+    width: calc(100% - 10px);
+}
+
+//FORM
 #form {
     display: flex;
     flex-direction: column;
