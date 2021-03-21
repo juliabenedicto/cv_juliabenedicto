@@ -14,7 +14,7 @@ $light-color: #bbd6ff;
 $secondary-color: #ffde4d;
 //SHADOWS
 $shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-//MEDIA QUERIES
+//MEDIA QUERIES (Breakpoints)
 @mixin tablet-and-up {
     @media screen and (min-width: 769px) {
         @content;

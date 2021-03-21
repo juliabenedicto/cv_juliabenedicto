@@ -17,11 +17,11 @@
     <header id="header">
         <nav class="menu-nav">
             <ul>
-                <li><a href="#inicio"><i class="fas fa-user"></i></a></li>
-                <li><a href="#educacion"><i class="fas fa-user-graduate"></i></a></li>
-                <li><a href="#experiencia-profesional"><i class="fas fa-briefcase"></i></a></li>
-                <li><a href="#skills"><i class="fas fa-signal"></i></a></li>
-                <li><a href="#contacto"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="#inicio"><i class="fas fa-user"></i><span>Sobre mi</span></a></li>
+                <li><a href="#educacion"><i class="fas fa-user-graduate"></i><span>Educación</span></a></li>
+                <li><a href="#experiencia-profesional"><i class="fas fa-briefcase"></i><span>Experiencia profesional</span></a></li>
+                <li><a href="#skills"><i class="fas fa-signal"></i><span>Skills</span></a></li>
+                <li><a href="#contacto"><i class="fas fa-envelope"></i><span>Contacto</span></a></li>
             </ul>
         </nav>
         <!--Fin #menu-nav-->
@@ -37,7 +37,7 @@
         <h2>Sobre mi</h2>
         <p>Me considero una persona tenaz, entusiasta y proactiva, con facilidad para relacionarme con la gente y sacar lo mejor de las personas de mi alrededor.</p>
         <p>La combinación de estudio y esfuerzo me permiten estar en constante evolución, que es mi forma de disfrutar de la vida.</p>
-        <button class="btn">Descargar CV</button>
+        <a href="https://www.linkedin.com/in/juliabenedicto/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
     <!--Fin #sobre-mi-->
 
@@ -154,8 +154,7 @@
     </div>
     <!--Fin #educacion-->
 
-    <div class="parallax-cita">
-        <!--AÑADIR IMAGEN CON CITA-->
+    <div class="cita">
         <blockquote>
             <p>Nunca digas nunca, porque los límites, como los miedos, son solo una ilusión.
             </p>
@@ -230,12 +229,17 @@
 
     <div class="container" id="skills">
         <h3>Skills</h3>
-        <div class="bar learning" data-skill="TDD"></div>
-        <div class="bar front basic" data-skill="JavaScript"></div>
-        <div class="bar back intermediate" data-skill="Python"></div>
-        <div class="bar front advanced" data-skill="HTML5"></div>
-        <div class="bar front advanced" data-skill="CSS"></div>
-        <div class="bar expert" data-skill="Trabajo en equipo"></div>
+        <div class="bar hard learning" data-skill="PHP"></div>
+        <div class="bar hard basic" data-skill="JavaScript"></div>
+        <div class="bar hard intermediate" data-skill="HTML + CSS"></div>
+        <div class="bar hard advanced" data-skill="Conocimientos Legales"></div>
+        <div class="bar soft advanced" data-skill="Orientación a resultados"></div>
+        <div class="bar soft advanced" data-skill="Resolución de problemas"></div>
+        <div class="bar soft expert" data-skill="Manejo del tiempo y organización"></div>
+        <div class="bar soft expert" data-skill="Trabajo en equipo"></div>
+        <div class="bar intermediate" data-skill="Inglés"></div>
+        <div class="bar expert" data-skill="Francés"></div>
+
 
 
     </div>
@@ -243,25 +247,8 @@
 
     <div class="container" id="contacto">
         <h3>Contacto</h3>
-
-        <form class="form" id="form">
-            <div class="form-control">
-                <label for="nombre">Nombre + Apellido(s)</label>
-                <input id="nombre" type="text" placeholder="Introduce tu nombre y apellido(s)">
-                <small>Mensaje de error</small>
-            </div>
-            <div class="form-control">
-                <label for="email">Email</label>
-                <input id="nombre" type="text" placeholder="Introduce tu email">
-                <small>Mensaje de error</small>
-            </div>
-            <div class="form-control">
-                <label for="email">Email</label>
-                <input id="nombre" type="text" placeholder="Introduce tu email">
-                <small>Mensaje de error</small>
-            </div>
-            <button>Enviar</button>
-        </form>
+        <p><i class="far fa-envelope"></i> juliabenedicto@gmail.com</p>
+        <p><i class="fas fa-phone-alt"></i> 623 04 04 20</p>
     </div>
     <!--Fin #contacto-->
 
@@ -270,7 +257,7 @@
             <a href="https://www.linkedin.com/in/juliabenedicto/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </nav>
         <h4>Júlia Benedicto</h4>
-        <p>2021 - Todos los derechos reservados</p>
+        <p> &copy; 2021 - Todos los derechos reservados</p>
     </footer>
 
     <script src="./assets/scripts/main.js"></script>
