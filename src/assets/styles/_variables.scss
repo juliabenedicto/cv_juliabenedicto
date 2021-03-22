@@ -1,10 +1,8 @@
 @use "sass:color";
 //FONTS
-$font-family-lato: 'Lato',
+$font-family-lato: "Lato",
 sans-serif;
-$font-family-lilita: 'Lilita One',
-cursive;
-$font-amatic: 'Amatic SC',
+$font-amatic: "Amatic SC",
 cursive;
 //COLOURS
 $body-bg: #fff;
@@ -13,28 +11,4 @@ $dark-color: #5b769b;
 $light-color: #bbd6ff;
 $secondary-color: #ffde4d;
 //SHADOWS
-$shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-//MEDIA QUERIES (Breakpoints)
-@mixin tablet-and-up {
-    @media screen and (min-width: 769px) {
-        @content;
-    }
-}
-
-@mixin mobile-and-up {
-    @media screen and (min-width: 601px) {
-        @content;
-    }
-}
-
-@mixin tablet-and-down {
-    @media screen and (max-width: 768px) {
-        @content;
-    }
-}
-
-@mixin mobile-and-down {
-    @media screen and (max-width: 600px) {
-        @content;
-    }
-}
+$shadow: 5px 5px 5px 0px rgba(0, 0, 0, .75);
